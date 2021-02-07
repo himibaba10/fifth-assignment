@@ -31,14 +31,12 @@
 }
 
 ul {
-    list-style-type: none;
     width: 300px;
     margin: auto;
     text-align: left;
 }
 
 div p{
-    position: absolute;
     left: 31%;
     font-weight: bold;
     font-size: 14px;
