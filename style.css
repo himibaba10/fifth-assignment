@@ -1,0 +1,37 @@
+.height {
+    height: 38px;
+}
+
+.btn {
+    vertical-align: top !important;
+}
+
+#food-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    height: 500px;
+    overflow: auto;
+}
+
+#food-container div div{
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+}
+
+#food-container img, div img{
+    width: 140px;
+
+}
+
+#food-details{
+    font-size: 1.5vw;
+}
+
+ul {
+    list-style-type: none;
+    width: 300px;
+    margin: auto;
+    text-align: left;
+}
