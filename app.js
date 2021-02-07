@@ -1,7 +1,7 @@
-const button = document.getElementById("search-food");
 const getFoodName = () => {
     const foodContainer = document.getElementById("food-container");
     foodContainer.innerText = " ";
+    document.getElementById("food-details").innerText = " ";
     const inputFoodName = document.getElementById("input-food-name").value;
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${inputFoodName}`;
     fetch(url)
@@ -9,7 +9,9 @@ const getFoodName = () => {
         .then(data => showFoodName(data.meals));
 
     const showFoodName = foods => {
-
+        if(foods == null){
+            document.getElementById("food-details").innerText = "This food is not available, please search another";
+        }
         foods.forEach(food => {
             const foodInfo = `
             <div onclick="displayFoodDetails('${food.strMeal}')">

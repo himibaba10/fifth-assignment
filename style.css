@@ -15,14 +15,15 @@
 }
 
 #food-container div div{
+    position: relative;
     border: 1px solid black;
     padding: 20px;
     text-align: center;
+    width: 235px;
 }
 
 #food-container img, div img{
-    width: 140px;
-
+    width: 193px;
 }
 
 #food-details{
@@ -34,4 +35,11 @@ ul {
     width: 300px;
     margin: auto;
     text-align: left;
+}
+
+div p{
+    position: absolute;
+    left: 31%;
+    font-weight: bold;
+    font-size: 14px;
 }
